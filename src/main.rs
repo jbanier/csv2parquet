@@ -1,7 +1,5 @@
 use clap::Parser;
-use polars::{prelude::*, sql::SQLContext};
-use polars_io::{csv, prelude::*};
-use std::fs::File;
+use polars::prelude::*;
 
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
