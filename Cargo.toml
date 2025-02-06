@@ -1,0 +1,13 @@
+[package]
+name = "csv2parquet"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+polars = { version = "0.46.0", features = ["lazy", "rows", "sql", "strings", "dtype-datetime", "polars-io", "csv", "parquet"] }
+clap = { version = "4.5.27", features = ["derive"] }
+chrono = "0.4.39"
+charming = { version = "0.4.0", features = ["image", "ssr"] }
+polars-io = "0.46.0"
